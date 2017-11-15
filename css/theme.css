@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-ExtraBold.ttf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+html {
+
+    overflow: hidden;
+    
+    /* FONTS */
+    --default-font-family: "Open Sans", Helvetica, sans-serif;
+    --default-font-color: #303233;
+    --default-font-color-lighter: #606060;
+    --default-font-color-lightest: #a8a8a8;
+    --default-placeholder-color: #a8a8a8;
+
+    /* BACKGROUND */
+    --default-bg-color: #f4f5f5;
+    --default-bg-color-light: white;
+    --default-bg-color-dark: #f5f5f5;
+    --default-bg-color-closed: #fdcccc;
+
+    /* ACCENT COLOUR */
+    --default-accent-color: #0074c9;
+    --default-accent-light-color: #c1def7;
+    --default-accent-font-color: white;
+
+    /* STATS */
+    --inbox: var(--default-accent-color);
+    --outbox: #67c067;
+    --sent: #de5e59;
+
+    /* BORDERS */
+    --default-border-color: #ebebeb;
+
+    /* HEADER HEIGHT */
+    --default-header-height: 60px;
+
+    /* BUTTONS */
+    /* --app-primary-button-color: #1f314c; */
+    --app-primary-button-color: var(--default-accent-color);
+    --app-primary-button-font: white;
+    --app-primary-button-border: var(--app-primary-button-color);
+
+    --app-success-button-color: #44b380;
+    --app-success-button-font: white;
+    --app-success-button-border: var(--app-success-button-color);
+
+    --app-secondary-button-color: #f2f2f2;
+    --app-secondary-button-font: var(--default-font-color);
+    --app-secondary-button-border: #dddddd;
+    --app-secondary-button-hover: #ebebeb;
+
+    --app-danger-button-color: #f04747;
+    --app-danger-button-font: white;
+    --app-danger-button-border: var(--app-danger-button-color);
+
+    --app-warning-button-color: #f0ad4e;
+    --app-warning-button-font: white;
+    --app-warning-button-border: var(--app-warning-button-color);
+
+    --app-login-button-color: var(--app-primary-button-color);
+    --app-login-button-font: var(--app-primary-button-font);
+
+    --default-popout-button-bg: var(--default-bg-color-light);
+    --default-popout-button-bg-hover: var(--default-bg-color-dark);
+    --default-popout-button-font: var(--default-font-color-lighter);
+}
