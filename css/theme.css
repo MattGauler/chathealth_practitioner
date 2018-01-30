@@ -101,4 +101,13 @@ html {
     --default-popout-button-bg: var(--default-bg-color-light);
     --default-popout-button-bg-hover: var(--default-bg-color-dark);
     --default-popout-button-font: var(--default-font-color-lighter);
+
+    /* CALENDAR */
+    --calendar-event-color: var(--default-accent-color);
+    --calendar-event-font-color: var(--default-accent-font-color);
+    --calendar-repeating-event-color: #68b3f3;
+    --calendar-repeating-event-font-color: white;
+    --calendar-allday-event-color: #68b3f3;
+    --calendar-allday-event-font-color: black;
+    
 }

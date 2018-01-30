@@ -1,13 +1,19 @@
 {
   "name": "ChatHealth",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "ChatHealth Practitioner Console",
   "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "startwithfiles": "electron . --allow-file-access-from-files"
+  "build": {
+   "appId": "chathealth",
+   "mac": {
+     "category": "chathealth.console.practitioner"
+   }
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "scripts": {
+   "pack": "electron-builder --dir",
+   "dist": "electron-builder"
+   },
+  "repository": "https://github.com/MattGauler/chathealth_practitioner",
   "keywords": [
     "Electron",
     "ChatHealth",
@@ -18,6 +24,7 @@
   "dependencies": {
     "@zalando/oauth2-client-js": "0.0.18",
     "client-oauth2": "^4.1.0",
+    "electron-log": "^2.2.11",
     "electron-updater": "^2.16.1",
     "izitoast": "^1.1.5",
     "moment": "^2.18.1",
@@ -26,6 +33,7 @@
     "sweetalert2": "^6.9.1"
   },
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "~1.7.8",
+    "electron-builder": "^19.45.5"
   }
 }

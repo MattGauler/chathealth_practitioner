@@ -24,7 +24,14 @@
 
     <body>
 
+		<script>
+		    require('electron').ipcRenderer.on('message', (event, message) => {
+      			console.log(message)  // Prints 'whoooooooh!'
+    		})
+  		</script>
+
         <div id="body">
+        
         </div>
 
         <script src="./js/setup.js"></script>
